@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundational Webpage</title>
+    <style>
+        /* Box Model and Basic Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Trebuchet MS, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Sticky Navigation Bar with Logo and Buttons */
+        nav {
+            background-color: #58317d;
+            color: white;
+            display: flex;
+            justify-content: flex-end; /* Changed this to flex-end */
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav img {
+            height: 35px;
+            margin-right: auto; /* Added this to keep the logo on the left side */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 10px; /* Reduced the gap between the nav items */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px; /* Reduced margin between links */
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: #db64f5;
+        }
+
+        /* Custom Styling for Sign Up and Sign In Buttons */
+        nav .buttons {
+            display: flex;
+            gap: 10px; /* Reduced gap between the buttons */
+        }
+
+        nav .buttons a {
+            padding: 10px 15px;
+            background-color: #3b1e57;
+            border-radius: 15px; /* Makes the buttons' edges rounded */
+            color: white;
+            text-decoration: none;
+        }
+
+        nav .buttons a:hover {
+            background-color: #9e00c2;
+        }
+
+        /* Header */
+        header {
+            background: url('https://plus.unsplash.com/premium_photo-1670137145381-e18829f6b4e1?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            height: 400px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Section - About */
+        section#about {
+            padding: 30px;
+            background: #f4f4f4;
+        }
+
+        section#about h2 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        section#about p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Form Styling */
+        form {
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #444444;
+            color: white;
+            border: none;
+        }
+
+        form button:hover {
+            background-color: #8146b7;
+        }
+
+        /* Services Section */
+        section#services,
+        section#contact {
+            padding: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation with Logo and Buttons -->
+    <nav>
+        <img src="Logo.png" alt="Logo">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="buttons">
+            <a href="#">Sign Up</a>
+            <a href="#">Sign In</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <p>A Simple HTML and CSS Example</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About This Page :</h2>
+        <p>This is an example webpage showcasing the core foundations of HTML and CSS.</p>
+        <br>
+        
+        <!-- Responsive Table Example -->
+        <h3>Responsive Table :</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Item 1</td>
+                    <td>This is a description of item 1.</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Item 2</td>
+                    <td>This is a description of item 2.</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Item 3</td>
+                    <td>This is a description of item 3.</td>
+                    <td>$30</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We offer a variety of web development services, including responsive design, SEO optimization, and more.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Footer content goes here &copy; 2024</p>
+    </footer>
+
+</body>
+</html>

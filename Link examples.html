@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Example</title>
+
+    <!-- 1. Internal CSS -->
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+        .internal-style {
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+
+    <!-- 2. External CSS -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <!-- 1. Inline CSS -->
+    <h1 style="color: red; text-align: center;">This is Inline CSS</h1>
+    
+    <p class="internal-style">This is Internal CSS.</p>
+
+    <p class="external-style">This is External CSS (linked from "styles.css").</p>
+
+    <!-- 2. Inline JavaScript -->
+    <button onclick="alert('This is Inline JavaScript!')">Click Me</button>
+
+    <!-- 2. Internal JavaScript -->
+    <script>
+        function internalJSFunction() {
+            alert("This is Internal JavaScript!");
+        }
+    </script>
+    <button onclick="internalJSFunction()">Internal JS</button>
+
+    <!-- 2. External JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- 3. Adding Images -->
+    <h2>Images</h2>
+    <img src="https://www.example.com/image.jpg" alt="Image from URL" width="200">
+    <img src="images/local-image.jpg" alt="Local Image" width="200">
+
+    <!-- 4. Clickable Links -->
+    <h2>Links</h2>
+    <a href="https://www.google.com" target="_blank">Go to Google</a><br>
+    <a href="about.html">Go to About Page</a>
+
+</body>
+</html>
